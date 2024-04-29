@@ -11,8 +11,12 @@ Utilisation de [node.js](https://nodejs.org/).
 -5 points
 
 PAS DE DOUBLES EGAL == ❌
+
 PAS DE COMPARAISON : !== ❌
+
 PAS DE VAR ❌
+
+PAS DE SWITCH ❌
 
 ## A faire :
 
