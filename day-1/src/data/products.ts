@@ -1,3 +1,5 @@
+import tshirt from "../assets/tee-shirt.jpg";
+
 export const Products = [
   { name: "Classic White Mug", price: 12.99, description: "Pas de description", img: "https://via.placeholder.com/150" },
   { name: "Stainless Steel Travel Mug", price: 19.99, description: "Pas de description", img: "https://via.placeholder.com/150" },
