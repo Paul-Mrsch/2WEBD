@@ -1,25 +1,14 @@
 import {
   createBrowserRouter,
-  Link,
   Outlet,
   RouterProvider,
   useParams,
 } from "react-router-dom";
 import "./App.css";
 import { PokemonCard } from "./components/PokemonCard";
-import Navbar from "./components/Navbar";
+import { Menu } from "./components/Menu.tsx";
 import { pokemons } from "./pokemons.ts";
 import { AddPokemonCard } from "./components/AddPokemon.tsx";
-
-function Menu() {
-  return (
-    <div style={{ display: "flex", flexFlow: "row nowrap", gap: 10 }}>
-      <Link to="/">Accueil</Link>
-      <Link to="/contact">Contact</Link>
-      <Link to="/pokemons/new">Créer un pokémon</Link>
-    </div>
-  );
-}
 
 function Welcome() {
   const params = useParams();
