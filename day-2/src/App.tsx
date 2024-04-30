@@ -31,8 +31,7 @@ const router = createBrowserRouter([
     ),
     element: (
       <div>
-        <h1>Pokedex</h1>
-        <Menu />
+        <Menu title="Pokedex" />
         <Outlet />
       </div>
     ),

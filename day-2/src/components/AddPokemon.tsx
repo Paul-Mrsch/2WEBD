@@ -9,6 +9,8 @@ export function AddPokemonCard() {
 
   return (
     <>
+      <br />
+      <br />
       <div
         className="flip-container"
         onTouchStart={(event) => {
@@ -25,11 +27,14 @@ export function AddPokemonCard() {
             <h3>Attraper un nouveau pokemon</h3>
           </div>
           <div className="back">
-            <img
-              style={{ width: "50%", height: "auto" }}
-              src="https://preview.redd.it/1d0kma9knw1y.png?auto=webp&s=d5a0c64007d640dc589e60f05d973c040a563520"
-              alt="pokeball"
-            />
+            <center>
+              <img
+                style={{ width: "50%", height: "auto" }}
+                src="https://preview.redd.it/1d0kma9knw1y.png?auto=webp&s=d5a0c64007d640dc589e60f05d973c040a563520"
+                alt="pokeball"
+              />
+            </center>
+            <br />
             <form>
               <label htmlFor="name">Name:</label>
               <input
@@ -38,7 +43,8 @@ export function AddPokemonCard() {
                 name="name"
                 value={name}
                 onChange={(e) => setName(e.currentTarget.value)}
-              />
+              />{" "}
+              <br />
               <label htmlFor="type">Type:</label>
               <select
                 id="type"
@@ -65,6 +71,7 @@ export function AddPokemonCard() {
                 <option value="steel">🔩 Steel</option>
                 <option value="water">💧 Water</option>
               </select>
+              <br />
               <label htmlFor="weight">Weight:</label>
               <input
                 type="number"
@@ -73,6 +80,7 @@ export function AddPokemonCard() {
                 value={weight}
                 onChange={(e) => setWeight(e.currentTarget.valueAsNumber)}
               />
+              <br />
               <label htmlFor="height">Height:</label>
               <input
                 type="number"

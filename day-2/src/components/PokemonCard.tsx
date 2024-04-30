@@ -5,6 +5,7 @@ import { Radar } from "react-chartjs-2";
 import { Chart, RadialLinearScale, PointElement, LineElement } from "chart.js";
 
 Chart.register(RadialLinearScale, PointElement, LineElement);
+
 interface PokemonCardProps {
   pokemon: PokemonDetail;
 }
