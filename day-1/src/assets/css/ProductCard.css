@@ -1,17 +1,21 @@
 .product-card {
-    width: 33%;
-    justify-content: center;
+  width: 33%;
+  justify-content: center;
 }
 
 .product-card img {
-    width: auto;
-    height: 25em;
+  width: auto;
+  height: 25em;
 }
 
 .quantity {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+ul > li {
+  width: fit-content;
 }

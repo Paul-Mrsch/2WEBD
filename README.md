@@ -1,3 +1,9 @@
+# A AJOUTER
+
+Dans le projet du day 2 :
+Affichage des stats apres cliquage sur le back puis dépliage
+Navbar avec fonction de recherche
+
 # Projet :
 
 Ce projet est réalisé dans le cadre du cours de Supinfo.
