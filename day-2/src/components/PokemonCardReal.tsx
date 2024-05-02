@@ -18,8 +18,9 @@ interface PokemonCardProps {
 
 export function PokemonCardReal(props: PokemonCardProps) {
   const [image, setImage] = useState({
-    appearance: props.pokemon.sprites.other.dream_world.front_default,
+    appearance: props.pokemon.sprites.front_default,
   });
+
   const statsData = {
     labels: props.pokemon.stats.map((stat) => stat.stat.name),
     datasets: [

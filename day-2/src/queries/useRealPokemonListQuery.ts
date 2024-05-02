@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query";
+import { keepPreviousData, useQuery } from "@tanstack/react-query";
 import { PokemonType } from "../typesReal";
 
 interface PokemonListResponse {
@@ -33,5 +33,6 @@ export function useRealPokemonListQuery(page: number) {
       );
       return pokemonDetail as unknown as PokemonListResponse;
     },
+    placeholderData: keepPreviousData,
   });
 }

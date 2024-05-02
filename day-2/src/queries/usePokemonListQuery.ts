@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, keepPreviousData } from "@tanstack/react-query";
 import { PokemonDetail } from "../types";
 
 interface PokemonListResponse {
@@ -18,5 +18,6 @@ export function usePokemonListQuery(page: number) {
       const json = await response.json();
       return json as PokemonListResponse;
     },
+    placeholderData: keepPreviousData,
   });
 }
