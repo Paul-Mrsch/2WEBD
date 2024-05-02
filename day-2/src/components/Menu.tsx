@@ -10,15 +10,18 @@ export function Menu(props: MenuProps) {
       <h1>{props.title}</h1>
       <center>
         <div className="ribbon">
-          <a href="/">
+          <Link to={"/"}>
             <span>Home</span>
-          </a>
-          <a href="/contact">
+          </Link>
+          <Link to={"contact"}>
             <span>Contact</span>
-          </a>
-          <a href="/pokemons/new">
+          </Link>
+          <Link to={"/pokemons/new"}>
             <span>Créer un pokémon</span>
-          </a>
+          </Link>
+          <Link to={"/prof"}>
+            <span>Professeur</span>
+          </Link>
         </div>
       </center>
       <br />

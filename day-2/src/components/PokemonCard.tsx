@@ -2,9 +2,15 @@ import "../assets/css/PokemonCard.css";
 import { PokemonDetail } from "../types";
 import { useState } from "react";
 import { Radar } from "react-chartjs-2";
-import { Chart, RadialLinearScale, PointElement, LineElement } from "chart.js";
+import {
+  Chart,
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+} from "chart.js";
 
-Chart.register(RadialLinearScale, PointElement, LineElement);
+Chart.register(RadialLinearScale, PointElement, LineElement, Filler);
 
 interface PokemonCardProps {
   pokemon: PokemonDetail;
@@ -12,7 +18,7 @@ interface PokemonCardProps {
 
 export function PokemonCard(props: PokemonCardProps) {
   const [image, setImage] = useState({
-    appearance: props.pokemon.image.front_default,
+    appearance: props.pokemon.image,
   });
   const statsData = {
     labels: Object.keys(props.pokemon.stats),
@@ -72,17 +78,17 @@ export function PokemonCard(props: PokemonCardProps) {
             <p className="stats">Stats : </p>
             <Radar data={statsData} options={options} />
 
-            <select
+            {/* <select
               className="sprite"
               onChange={(event) => setImage({ appearance: event.target.value })}
             >
-              {/* Affichage de la liste de toutes les images disponibles boucle pour récupérer la clé dans image et la valeur */}
               {Object.entries(props.pokemon.image).map(([key, value]) => (
                 <option key={key} value={value}>
                   {key}
                 </option>
               ))}
-            </select>
+            </select> 
+            */}
           </div>
         </div>
       </div>

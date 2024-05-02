@@ -1,8 +1,8 @@
 # A AJOUTER
 
 Dans le projet du day 2 :
-Affichage des stats apres cliquage sur le back puis dépliage
-Navbar avec fonction de recherche
+    Affichage des stats apres cliquage sur le back puis dépliage
+    Navbar avec fonction de recherche
 
 # Projet :
 

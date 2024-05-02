@@ -5,10 +5,10 @@ import {
   useParams,
 } from "react-router-dom";
 import "./App.css";
-import { PokemonCard } from "./components/PokemonCard";
 import { Menu } from "./components/Menu.tsx";
-import { pokemons } from "./pokemons.ts";
 import { AddPokemonCard } from "./components/AddPokemon.tsx";
+import { PokemonList } from "./components/PokemonList.tsx";
+import { PokemonListReal } from "./components/PokemonListReal.tsx";
 
 function Welcome() {
   const params = useParams();
@@ -40,9 +40,7 @@ const router = createBrowserRouter([
         path: "/",
         element: (
           <div className="pokemons">
-            {pokemons.map((pokemon) => (
-              <PokemonCard pokemon={pokemon} />
-            ))}
+            <PokemonListReal />
           </div>
         ),
       },
@@ -57,6 +55,10 @@ const router = createBrowserRouter([
       {
         path: "/pokemons/new",
         element: <AddPokemonCard />,
+      },
+      {
+        path: "/prof",
+        element: <PokemonList />,
       },
     ],
   },

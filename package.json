@@ -6,6 +6,8 @@
     "tailwindcss": "^3.4.3"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.32.1",
+    "@tanstack/react-query-devtools": "^5.32.1",
     "react-chartjs-2": "^5.2.0"
   }
 }
