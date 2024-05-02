@@ -55,7 +55,7 @@ ul > li {
   position: absolute;
   top: 0;
   left: 0;
-  height: 60em;
+  height: 32em;
   box-shadow: 0.2em #fff;
 }
 
@@ -70,4 +70,9 @@ ul > li {
 .back {
   transform: rotateY(180deg);
   text-align: left;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
 }

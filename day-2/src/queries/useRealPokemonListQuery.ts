@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { PokemonType } from "../typesReal";
 
 interface PokemonListResponse {
-  name: string;
+  count: number;
   results: PokemonType[];
 }
 
@@ -11,12 +11,14 @@ interface Pokemons {
   url: string;
 }
 
-export function useRealPokemonListQuery() {
+export function useRealPokemonListQuery(page: number) {
   return useQuery({
-    queryKey: ["pokemons", "pokemonId"],
+    queryKey: ["pokemonsReal", page],
     queryFn: async () => {
+      const offset = (page - 1) * 20; // Calcul de l'offset
+      const limit = 20;
       const response = await fetch(
-        "https://pokeapi.co/api/v2/pokemon?offset=0&limit=950"
+        `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
       );
       const json = await response.json();
 

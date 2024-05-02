@@ -51,3 +51,8 @@
   min-height: fit-content;
   gap: 10em;
 }
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}

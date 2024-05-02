@@ -38,11 +38,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: (
-          <div className="pokemons">
-            <PokemonListReal />
-          </div>
-        ),
+        element: <PokemonListReal />,
       },
       {
         path: "/contact",

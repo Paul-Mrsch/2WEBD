@@ -6,11 +6,15 @@ interface PokemonListResponse {
   results: PokemonDetail[];
 }
 
-export function usePokemonListQuery() {
+export function usePokemonListQuery(page: number) {
   return useQuery({
-    queryKey: ["pokemons"],
+    queryKey: ["pokemons", page],
     queryFn: async () => {
-      const response = await fetch("https://pokeapi.fly.dev/2webd/pokemons");
+      const offset = (page - 1) * 20; // Calcul de l'offset
+      const limit = 20;
+      const response = await fetch(
+        `https://pokeapi.fly.dev/2webd/pokemons?offset=${offset}&limit=${limit}`
+      );
       const json = await response.json();
       return json as PokemonListResponse;
     },
