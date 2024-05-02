@@ -36,6 +36,10 @@ PAS DE VAR ❌
 
 PAS DE SWITCH ❌
 
+PAS D'ERREUR DANS LA CONSOLE ❌
+
+PAS DE BALISE "a" => BALISE "Link" ❌
+
 ### A faire :
 
 Faire un code importé dans chaque fichier qui va vérifier s'il y a un double égal dans le code et envoie une erreur s'il y en a un.
