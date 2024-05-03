@@ -54,7 +54,7 @@ export function PokemonCard(props: PokemonCardProps) {
         <div className="flipper">
           <div className="front">
             <img src={image.appearance} alt={props.pokemon.name} />
-            <h3>{props.pokemon.name}</h3>
+            {/* <h3>{props.pokemon.name}</h3> */}
             <center>
               <ul>
                 {props.pokemon.types.map((type, index) => (
