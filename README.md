@@ -44,6 +44,17 @@ PAS DE BALISE "a" => BALISE "Link" ❌
 
 Faire un code importé dans chaque fichier qui va vérifier s'il y a un double égal dans le code et envoie une erreur s'il y en a un.
 
+FAIRE UN README
+
+Utiliser .gitingore
+Utiliser git archive
+
+Utiliser code formatter (prettier)
+
+Faire des tests
+
+Pas de node_modules
+
 ## Auteurs :
 
 [Paul Mareschi](https://github.com/Paul-Mrsch)
